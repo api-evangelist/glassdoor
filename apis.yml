@@ -1,0 +1,79 @@
+aid: glassdoor
+url: https://raw.githubusercontent.com/api-evangelist/glassdoor/refs/heads/main/apis.yml
+name: Glassdoor
+kind: company
+description: >-
+  Glassdoor is an online platform for company reviews, salary reports, and job
+  listings, now part of Recruit Holdings (alongside Indeed) and tightly
+  integrated with the broader Workday talent ecosystem. Historically Glassdoor
+  offered a public Partner Job Search / Employer Reviews API
+  (api.glassdoor.com/api/api.htm), but the program was closed to new
+  applications in 2021 and active integrations require an existing partner
+  relationship. Current API access is enterprise sales-led for ATS, programmatic
+  recruitment, and employer-brand partners. No self-serve developer portal is
+  active today.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Employer Reviews
+  - Job Search
+  - Salaries
+  - Recruitment
+  - Employer Branding
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: glassdoor:partner-api-legacy
+    name: Glassdoor Partner API (Legacy)
+    description: >-
+      Historical REST API that exposed job listings, employer reviews, salary
+      reports, and company metadata to approved partners. Required a partner
+      ID and partner key as query parameters. The program stopped accepting
+      new applications in 2021 and is no longer documented on the public
+      Glassdoor developer page; existing integrations continue under direct
+      partnership.
+    humanURL: https://www.glassdoor.com/developer/index.htm
+    baseURL: https://api.glassdoor.com/api/api.htm
+    tags:
+      - Legacy
+      - Partner API
+      - Jobs
+      - Reviews
+      - Salaries
+    properties:
+      - type: Documentation
+        url: https://www.glassdoor.com/developer/index.htm
+  - aid: glassdoor:job-distribution
+    name: Glassdoor Job Distribution / ATS Integrations
+    description: >-
+      Enterprise channel for distributing job postings from applicant tracking
+      systems and programmatic recruitment platforms into Glassdoor. Access is
+      contracted directly with Glassdoor / Indeed sales rather than via a
+      self-serve developer portal.
+    humanURL: https://www.glassdoor.com/employers/
+    baseURL: https://www.glassdoor.com/employers/
+    tags:
+      - ATS
+      - Job Distribution
+      - Enterprise
+    properties:
+      - type: Website
+        url: https://www.glassdoor.com/employers/
+common:
+  - type: Website
+    url: https://www.glassdoor.com/
+  - type: Documentation
+    url: https://www.glassdoor.com/developer/index.htm
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/glassdoor.com
+  - type: Twitter
+    url: https://twitter.com/Glassdoor
+integrations:
+  - name: Workday
+  - name: Indeed
+  - name: Greenhouse
+  - name: Lever
+  - name: SmartRecruiters
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
