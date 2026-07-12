@@ -60,6 +60,10 @@ apis:
       - type: Website
         url: https://www.glassdoor.com/employers/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/glassdoor-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/glassdoor-domain-security.yml
   - type: Website
     url: https://www.glassdoor.com/
   - type: Documentation
