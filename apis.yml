@@ -49,6 +49,12 @@ apis:
     tags:
       - Legacy
       - Partner API
+      - Job
+      - Reviews
+      - Salaries
+    tags_raw:
+      - Legacy
+      - Partner API
       - Jobs
       - Reviews
       - Salaries
