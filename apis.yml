@@ -40,8 +40,15 @@ tags:
   - Employer Reviews
   - Job Search
   - Salaries
+  - Recruiting
+  - Employer Branding
+tags_raw:
+  - Employer Reviews
+  - Job Search
+  - Salaries
   - Recruitment
   - Employer Branding
+  - Recruiting
 created: '2026-05-23'
 modified: '2026-05-23'
 specificationVersion: '0.23'
@@ -82,6 +89,10 @@ apis:
     humanURL: https://www.glassdoor.com/employers/
     baseURL: https://www.glassdoor.com/employers/
     tags:
+      - Applicant Tracking
+      - Job Distribution
+      - Enterprise
+    tags_raw:
       - ATS
       - Job Distribution
       - Enterprise
