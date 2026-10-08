@@ -100,6 +100,12 @@ apis:
       - type: Website
         url: https://www.glassdoor.com/employers/
 common:
+  - type: Plans
+    url: plans/glassdoor-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/glassdoor-rate-limits.yml
+  - type: FinOps
+    url: finops/glassdoor-finops.yml
   - type: VulnerabilityDisclosure
     url: security/glassdoor-vulnerability-disclosure.yml
   - type: DomainSecurity
